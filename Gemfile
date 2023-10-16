@@ -5,6 +5,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
+gem 'rswag-api', '~> 2.11.0'
+gem 'rswag-ui', '~> 2.11.0'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.8'
 
@@ -42,6 +45,7 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   gem 'rspec-rails', '~> 6.0.0'
+  gem 'rswag-specs', '~> 2.11.0'
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rake', require: false
