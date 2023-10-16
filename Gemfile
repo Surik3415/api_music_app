@@ -46,6 +46,7 @@ gem 'bootsnap', require: false
 group :development, :test do
   gem 'rspec-rails', '~> 6.0.0'
   gem 'rswag-specs', '~> 2.11.0'
+  gem 'dotenv-rails', '~> 2.8.1'
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rake', require: false
