@@ -23,11 +23,7 @@ jobs:
           bundler-cache: true
       - name: Run rubocop
         uses: bundle exec rubocop
-      - name: Upload Code Coverage
-        uses: actions/upload-artifact@v3.1.3
-        with:
-          name: coverage
-          path: coverage/index.html
+
        
 
 
