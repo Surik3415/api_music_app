@@ -241,6 +241,87 @@
           null
         ]
       },
+      "/home/surik3415/Desktop/api_music_app/app/models/song.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/spec/requests/ping_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/spec/swagger_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
       "/home/surik3415/Desktop/api_music_app/app/controllers/ping_controller.rb": {
         "lines": [
           null,
@@ -261,6 +342,6 @@
         ]
       }
     },
-    "timestamp": 1697538314
+    "timestamp": 1697567343
   }
 }
