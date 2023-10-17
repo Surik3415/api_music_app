@@ -41,12 +41,13 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem "rack-cors"
+gem "rack-cors"
 
 group :development, :test do
+  gem "json_matchers"
+  gem 'dotenv-rails', '~> 2.8.1'
   gem 'rspec-rails', '~> 6.0.0'
   gem 'rswag-specs', '~> 2.11.0'
-  gem 'dotenv-rails', '~> 2.8.1'
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rake', require: false

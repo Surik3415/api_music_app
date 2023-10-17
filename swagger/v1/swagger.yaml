@@ -1,0 +1,17 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/":
+    get:
+      summary: Check if the server is alive
+      responses:
+        '200':
+          description: Server is alive
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: localhost:3000

@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative 'boot'
-
 require 'action_cable/engine'
 require 'action_controller/railtie'
 require 'action_mailbox/engine'
