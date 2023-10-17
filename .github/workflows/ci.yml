@@ -22,7 +22,9 @@ jobs:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
       - name: Run rubocop
-        uses: bundle exec rubocop
+        run: bundle exec rubocop
+      - name: Run rubocop
+        run: bundle exec rspec
 
        
 
