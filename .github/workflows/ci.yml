@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        ruby:
+          - 2.7 
+          - 3.2.2
+    runs-on: ${{ matrix.os }}
+    steps: 
+      - uses: actions/checkout@v4.1.0
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1.156.0
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+      - run: bundle exec rspec
+            - name: Install dependencies
+        run: bundle install
+      - name: Run RSpec with SimpleCov
+        run: |
+          bundle exec rspec --format documentation
+          if [ -f coverage/.last_run.json ]; then
+            bundle exec simplecov merge coverage
+          fi
+          bundle exec simplecov html
+        env:
+          RUBYOPT: -W:no-deprecated
+      - name: Upload Code Coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: coverage/index.html
+
+
