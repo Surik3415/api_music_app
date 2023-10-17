@@ -9,7 +9,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins ENV.fetch('BASE_URL', nil)
+    origins ENV.fetch('BASE_URL')
 
     resource '*', headers: :any, methods: %i[get post put patch delete options head]
   end
