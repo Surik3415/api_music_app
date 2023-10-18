@@ -20,8 +20,9 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV["DB_USER_NAME"] %>
-  password: <%= ENV["DB_PASSWORD"] %>
+  username: <%= ENV["POSTGRES_USER"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  host: localhost
 
 development:
   <<: *default
@@ -60,6 +61,10 @@ development:
 test:
   <<: *default
   database: api_music_app_test
+  username: <%= ENV["POSTGRES_USER"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  host: localhost
+
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -85,4 +90,4 @@ production:
   <<: *default
   database: api_music_app_production
   username: api_music_app
-  password: <%= ENV["API_MUSIC_APP_DATABASE_PASSWORD"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>

@@ -165,6 +165,12 @@ RSpec/NestedGroups:
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
 
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+RSpec/Rails/InferredSpecType:
+  Enabled: false
+
 Performance/CollectionLiteralInLoop:
   Exclude:
     - 'Rakefile'
