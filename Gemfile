@@ -21,7 +21,7 @@ gem 'puma', '~> 5.0'
 # gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-gem "redis", "~> 4.0"
+gem 'redis', '~> 4.0'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -46,6 +46,7 @@ gem 'rack-cors'
 group :development, :test do
   gem 'dotenv-rails', '~> 2.8.1'
   gem 'json_matchers'
+  gem 'msgpack', '~> 1.7.2' 'msgpack'
   gem 'rspec-rails', '~> 6.0.0'
   gem 'rswag-specs', '~> 2.11.0'
   gem 'rubocop-performance', require: false
