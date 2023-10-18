@@ -27,7 +27,7 @@
 #         run: bundle exec rspec
 
 env:
-  RUBY_VERSION: 3.0.0
+  RUBY_VERSION: 3.2.2
   POSTGRES_USER: postgres
   POSTGRES_PASSWORD: postgres
   POSTGRES_DB: api_music_app_test
