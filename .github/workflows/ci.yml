@@ -30,8 +30,8 @@ env:
   RUBY_VERSION: 3.0.0
   POSTGRES_USER: postgres
   POSTGRES_PASSWORD: postgres
-  POSTGRES_DB: programmingtil_rails_1_test
-  DEVISE_JWT_SECRET_KEY: ${{ secrets.DEVISE_JWT_SECRET_KEY }}
+  POSTGRES_DB: api_music_app_test
+  RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
 
 name: Rails Specs
 on: [push,pull_request]
