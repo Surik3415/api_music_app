@@ -243,6 +243,8 @@
       },
       "/home/surik3415/Desktop/api_music_app/app/models/song.rb": {
         "lines": [
+          null,
+          null,
           1,
           null
         ]
@@ -342,6 +344,6 @@
         ]
       }
     },
-    "timestamp": 1697567343
+    "timestamp": 1697649122
   }
 }
