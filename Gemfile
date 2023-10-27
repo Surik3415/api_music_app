@@ -41,13 +41,16 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/
 # active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
+gem 'factory_bot_rails', '~> 6.2.0'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
 group :development, :test do
   gem 'dotenv-rails', '~> 2.8.1'
+  gem 'faker', '~> 3.2.1'
   gem 'json_matchers'
+  gem 'pry', '~> 0.14.2'
   gem 'rspec-rails', '~> 6.0.0'
   gem 'rswag-specs', '~> 2.11.0'
   gem 'rubocop-performance', require: false
