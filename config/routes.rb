@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'ping#index'
+  post '/sign_in', to: 'signin#create'
+  post '/sign_up', to: 'signup#create'
+  delete '/sign_out', to: 'signin#destroy'
 end
