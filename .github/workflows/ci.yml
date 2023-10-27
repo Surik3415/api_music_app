@@ -18,8 +18,13 @@ jobs:
         ports:
         - 5432:5432
         env:
+          REDIS_URL: redis://localhost:6379/0
           POSTGRES_USER: ${{ env.POSTGRES_USER }}
           POSTGRES_PASSWORD: ${{ env.POSTGRES_PASSWORD }}
+      redis:
+        image: redis:alpine
+        ports: ["6379:6379"]
+        options: --entrypoint redis-server
     steps:
       - uses: actions/checkout@v4.1.0
       - uses: ruby/setup-ruby@v1.156.0
