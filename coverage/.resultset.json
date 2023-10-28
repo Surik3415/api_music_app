@@ -272,12 +272,32 @@
           null
         ]
       },
-      "/home/surik3415/Desktop/api_music_app/spec/support/factory_bot.rb": {
+      "/home/surik3415/Desktop/api_music_app/spec/support/config/factory_bot.rb": {
         "lines": [
           null,
           null,
           1,
           1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/spec/support/config/json_matchers.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/spec/support/config/matcher_context.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -422,6 +442,8 @@
           2,
           null,
           1,
+          2,
+          null,
           null,
           null,
           null,
@@ -629,6 +651,6 @@
         ]
       }
     },
-    "timestamp": 1698452584
+    "timestamp": 1698502498
   }
 }

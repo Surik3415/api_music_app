@@ -50,7 +50,7 @@ gem 'rack-cors'
 group :development, :test do
   gem 'dotenv-rails', '~> 2.8.1'
   gem 'faker', '~> 3.2.1'
-  gem 'json_matchers'
+  gem 'json_matchers', '~> 0.11.1'
   gem 'pry', '~> 0.14.2'
   gem 'rspec-rails', '~> 6.0.0'
   gem 'rswag-specs', '~> 2.11.0'
