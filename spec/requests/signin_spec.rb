@@ -18,7 +18,9 @@ RSpec.describe 'Signin', type: :request do
           response(200, 'successful') do
             let(:params) { { email: user.email, password: user.password } }
 
-            run_test!
+            include_context 'test with schema matcher' do
+              let(:schema_path) { 'auth/ok_sign_in' }
+            end
           end
         end
 
