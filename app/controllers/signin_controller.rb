@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class SigninController < ApplicationController
+class SigninController < AuthenticateController
   before_action :authorize_by_refresh_header!, only: %i[destroy]
 
   def create

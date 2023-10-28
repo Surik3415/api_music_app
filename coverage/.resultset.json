@@ -537,17 +537,17 @@
           null,
           null,
           1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          0,
           null,
           null,
-          1,
-          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -581,6 +581,26 @@
           null,
           null,
           1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/controllers/authenticate_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
           null,
           1,
           0,
@@ -651,6 +671,6 @@
         ]
       }
     },
-    "timestamp": 1698502498
+    "timestamp": 1698504054
   }
 }
