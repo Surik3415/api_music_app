@@ -9,9 +9,9 @@ class SignupController < AuthenticateController
       session = JWTSessions::Session.new(payload: payload)
       tokens = session.login
 
-      render json: tokens
+      render json: TokensSerializer.new(**tokens)
     else
-      head :unprocessable_entity
+      render json: ErrorsSerializer.new(**user.errors), status: :unprocessable_entity
     end
   end
 
