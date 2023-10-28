@@ -42,6 +42,7 @@ gem 'bootsnap', require: false
 # active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 gem 'factory_bot_rails', '~> 6.2.0'
+gem 'jsonapi-serializer', '~> 2.2.0'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'

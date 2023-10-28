@@ -9,9 +9,11 @@ class SigninController < ApplicationController
     if user&.authenticate(params[:password])
       payload = { user_id: user.id }
       session = JWTSessions::Session.new(payload: payload)
-      render json: session.login
+      tokens = session.login
+      render json: TokensSerializer.new(**tokens)
     else
-      head :unprocessable_entity
+      render json: ErrorsSerializer.new(message: 'invalid login or passwors'),
+             status: :unprocessable_entity
     end
   end
 
