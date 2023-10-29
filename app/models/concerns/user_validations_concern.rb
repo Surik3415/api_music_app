@@ -7,6 +7,7 @@ module UserValidationsConcern
   USERNAME_REGEX = /\A[a-zA-Z]+\z/.freeze
 
   included do
+    validates :username, :email, :password, presence: true, on: :create
     validates :username, length: { in: 2..20 }, format: { with: USERNAME_REGEX,
                                                           message: 'only allows letters' }, if:
                                                           :username_changed?
