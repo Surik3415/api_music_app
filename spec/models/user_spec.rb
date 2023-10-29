@@ -22,4 +22,10 @@ RSpec.describe User, type: :model do
     it { expect(user).to allow_value(user.password).for(:password) }
     it { expect(user).not_to allow_value(' ').for(:password) }
   end
+
+  it 'can attach images' do
+    file = fixture_file_upload('images/media.png', 'image/png')
+    user = create(:user, image: file)
+    expect(user.image.storage_key).to eq(:store)
+  end
 end

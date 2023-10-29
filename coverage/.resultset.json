@@ -241,16 +241,54 @@
           null
         ]
       },
+      "/home/surik3415/Desktop/api_music_app/config/initializers/shrine.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
       "/home/surik3415/Desktop/api_music_app/spec/factories/users.rb": {
         "lines": [
           null,
           null,
           1,
           1,
-          14,
-          14,
-          14,
-          14,
+          15,
+          15,
+          15,
+          15,
           null,
           null
         ]
@@ -360,6 +398,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -369,6 +408,20 @@
           null,
           1,
           1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/uploaders/image_uploader.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -705,6 +758,6 @@
         ]
       }
     },
-    "timestamp": 1698538265
+    "timestamp": 1698596135
   }
 }
