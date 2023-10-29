@@ -285,10 +285,10 @@
           null,
           1,
           1,
-          15,
-          15,
-          15,
-          15,
+          16,
+          16,
+          16,
+          16,
           null,
           null
         ]
@@ -419,7 +419,15 @@
           null,
           1,
           1,
+          1,
           null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
           1,
           null,
           null
@@ -620,6 +628,23 @@
           null
         ]
       },
+      "/home/surik3415/Desktop/api_music_app/spec/uploaders/image_uploader_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/home/surik3415/Desktop/api_music_app/app/controllers/ping_controller.rb": {
         "lines": [
           null,
@@ -758,6 +783,6 @@
         ]
       }
     },
-    "timestamp": 1698596135
+    "timestamp": 1698611529
   }
 }

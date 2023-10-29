@@ -5,6 +5,7 @@ module Api
     class UsersSerializer < ApplicationSerializer
       attributes :username, :email
       attribute :registrated_at, &:created_at
+      attribute :image, &:image_url
     end
   end
 end

@@ -23,9 +23,7 @@ RSpec.describe User, type: :model do
     it { expect(user).not_to allow_value(' ').for(:password) }
   end
 
-  it 'can attach images' do
-    file = fixture_file_upload('images/media.png', 'image/png')
-    user = create(:user, image: file)
-    expect(user.image.storage_key).to eq(:store)
+  describe 'presents of default image_url' do
+    it { expect(user.image_url).instance_of?(String) }
   end
 end
