@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class SignupController < ApplicationController
+class SignupController < AuthenticateController
   def create
     user = User.new(user_params)
 
@@ -9,9 +9,9 @@ class SignupController < ApplicationController
       session = JWTSessions::Session.new(payload: payload)
       tokens = session.login
 
-      render json: tokens
+      render json: TokensSerializer.new(**tokens)
     else
-      head :unprocessable_entity
+      render json: ErrorsSerializer.new(**user.errors), status: :unprocessable_entity
     end
   end
 

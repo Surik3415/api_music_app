@@ -247,10 +247,10 @@
           null,
           1,
           1,
-          8,
-          8,
-          8,
-          8,
+          14,
+          14,
+          14,
+          14,
           null,
           null
         ]
@@ -269,6 +269,12 @@
           1,
           1,
           1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -294,6 +300,18 @@
         "lines": [
           null,
           null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/spec/support/config/shoulda_matchers.rb": {
+        "lines": [
+          null,
+          null,
+          1,
           1,
           1,
           1,
@@ -341,6 +359,7 @@
           null,
           1,
           1,
+          1,
           null
         ]
       },
@@ -350,6 +369,33 @@
           null,
           1,
           1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/models/concerns/user_validations_concern.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -537,18 +583,6 @@
           null,
           null,
           1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
           null
         ]
       },
@@ -588,6 +622,26 @@
           null
         ]
       },
+      "/home/surik3415/Desktop/api_music_app/app/controllers/authenticate_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
       "/home/surik3415/Desktop/api_music_app/app/serializers/tokens_serializer.rb": {
         "lines": [
           null,
@@ -596,14 +650,14 @@
           1,
           null,
           1,
-          1,
+          2,
           null,
           null,
           1,
           null,
           1,
           null,
-          1,
+          2,
           null,
           null,
           null,
@@ -651,6 +705,6 @@
         ]
       }
     },
-    "timestamp": 1698502498
+    "timestamp": 1698538265
   }
 }
