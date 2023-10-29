@@ -24,7 +24,7 @@ module Api
       private
 
       def user_params
-        params.require(:user_profile).permit(:username, :email, :password)
+        params.require(:user_profile).permit(:username, :email, :password, :image, :remove_image)
       end
 
       def find_user_by_id

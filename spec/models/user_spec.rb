@@ -22,4 +22,8 @@ RSpec.describe User, type: :model do
     it { expect(user).to allow_value(user.password).for(:password) }
     it { expect(user).not_to allow_value(' ').for(:password) }
   end
+
+  describe 'presents of default image_url' do
+    it { expect(user.image_url).instance_of?(String) }
+  end
 end
