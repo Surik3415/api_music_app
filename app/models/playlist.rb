@@ -6,6 +6,6 @@ class Playlist < ApplicationRecord
        _prefix: true
   enum sharable_type: { closed: 0, open: 1 }
 
-  validates :name, lenght: { in: 3..50 }, presence: true
-  validates :description, lenght: { in: 3..250 }
+  validates :name, length: { in: 3..50 }, presence: true
+  validates :description, length: { in: 3..250 }
 end

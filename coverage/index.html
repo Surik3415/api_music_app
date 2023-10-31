@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-31T03:37:23+02:00">2023-10-31T03:37:23+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-31T03:52:26+02:00">2023-10-31T03:52:26+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  52.41%
+  52.05%
 </span>
 
      </span>
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>145</b> relevant lines,
+    <b>146</b> relevant lines,
     <span class="green"><b>76</b> lines covered</span> and
-    <span class="red"><b>69</b> lines missed. </span>
+    <span class="red"><b>70</b> lines missed. </span>
     (<span class="red">
-  52.41%
+  52.05%
 </span>
 )
   </div>
@@ -216,10 +216,10 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#e1669a5c6efdf58c5fc5386903cb0c08dde43e9e" class="src_link" title="app/models/playlist.rb">app/models/playlist.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">7</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">7</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0.00</td>
             
           </tr>
@@ -517,14 +517,14 @@
     <span class="group_name">Models</span>
     (<span class="covered_percent">
       <span class="red">
-  72.0%
+  69.23%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.72
+         0.69
        </span>
     </span> hits/line
     )
@@ -537,11 +537,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>25</b> relevant lines,
+    <b>26</b> relevant lines,
     <span class="green"><b>18</b> lines covered</span> and
-    <span class="red"><b>7</b> lines missed. </span>
+    <span class="red"><b>8</b> lines missed. </span>
     (<span class="red">
-  72.0%
+  69.23%
 </span>
 )
   </div>
@@ -589,10 +589,10 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#e1669a5c6efdf58c5fc5386903cb0c08dde43e9e" class="src_link" title="app/models/playlist.rb">app/models/playlist.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">7</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">7</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0.00</td>
             
           </tr>
@@ -3388,9 +3388,9 @@
     
 
     <div class="t-line-summary">
-      <b>7</b> relevant lines.
+      <b>8</b> relevant lines.
       <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>7</b> lines missed.</span>
+      <span class="red"><b>8</b> lines missed.</span>
     </div>
 
     
@@ -3495,12 +3495,23 @@
 
             
 
-            <code class="ruby">  validates :name, presence: true</code>
+            <code class="ruby">  validates :name, length: { in: 3..50 }, presence: true</code>
           </li>
         </div>
       
         <div>
           <li class="missed" data-hits="0" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  validates :description, length: { in: 3..250 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="11">
             
             
 
