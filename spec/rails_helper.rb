@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
-require 'simplecov'
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
-SimpleCov.start
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 
@@ -22,9 +20,6 @@ end
 RSpec.configure do |config|
   config.include Helpers::AuthenticationHelpers
   config.extend Helpers::AuthenticationHelpers
-
-  # config.include Helpers::AuthenticationHelpers, type: :request
-  # config.extend Helpers::AuthenticationHelpers, type: :request
 
   config.fixture_path = "#{Rails.root}/spec/fixtures"
 
