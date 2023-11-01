@@ -10,6 +10,13 @@
           1,
           1,
           1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -250,6 +257,120 @@
         "branches": {
         }
       },
+      "/home/surik3415/Desktop/api_music_app/app/controllers/api/v1/friend_requests_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/api_music_app/app/controllers/api/v1/friendships_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/surik3415/Desktop/api_music_app/app/controllers/api/v1/playlists_controller.rb": {
         "lines": [
           null,
@@ -274,14 +395,6 @@
           0,
           0,
           0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
           null,
           0,
           0,
@@ -296,25 +409,6 @@
           null,
           0,
           0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           0,
           0,
           0
@@ -390,6 +484,30 @@
         "branches": {
         }
       },
+      "/home/surik3415/Desktop/api_music_app/app/models/friend_request.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/api_music_app/app/models/friendship.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/surik3415/Desktop/api_music_app/app/models/playlist.rb": {
         "lines": [
           null,
@@ -400,6 +518,80 @@
           0,
           0,
           null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/api_music_app/app/queries/friend_requests/friend_requests_query.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/api_music_app/app/serializers/api/v1/friend_request_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/api_music_app/app/serializers/api/v1/friendship_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0
@@ -451,8 +643,21 @@
         ],
         "branches": {
         }
+      },
+      "/home/surik3415/Desktop/api_music_app/lib/constants/friend_request_tabs.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1698799722
+    "timestamp": 1698856550
   }
 }
