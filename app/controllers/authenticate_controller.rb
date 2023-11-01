@@ -13,4 +13,8 @@ class AuthenticateController < ApplicationController
   def not_authorized
     render json: { error: 'Not authorized' }, status: :unauthorized
   end
+
+  def not_found
+    render json: { error: 'Not Found' }, status: :not_found
+  end
 end

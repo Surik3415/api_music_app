@@ -47,6 +47,7 @@ gem 'jsonapi-serializer', '~> 2.2.0'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'aws-sdk-s3', '~> 1.14'
 gem 'image_processing', '~> 1.12.2'
+gem 'pagy', '~> 6.1'
 gem 'rack-cors'
 gem 'shrine', '~> 3.0'
 
