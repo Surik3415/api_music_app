@@ -2,7 +2,7 @@
 
 module Api
   module V1
-    class FriendRequestsController < AuthenticatedController
+    class FriendRequestsController < AuthenticateController
       include Pagy::Backend
       ITEMS = 15
 
