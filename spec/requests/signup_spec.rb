@@ -24,6 +24,14 @@ RSpec.describe 'Signup', type: :request do
             run_test!
           end
         end
+
+        context 'registrate user with in params' do
+          response(422, 'unprocessable_entity') do
+            let(:params) { '' }
+
+            run_test!
+          end
+        end
       end
     end
   end

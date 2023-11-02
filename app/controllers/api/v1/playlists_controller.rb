@@ -3,7 +3,7 @@
 module Api
   module V1
     class PlaylistsController < AuthenticateController
-      before_action :authorize_access_request!, only: %i[update destroy]
+      before_action :authorize_access_request!, only: %i[show update destroy]
 
       include Pagy::Backend
 
@@ -22,7 +22,7 @@ module Api
         return not_found if playlist.nil?
         return not_found unless authorized_to_view?(playlist)
 
-        render json: PlaylistsSerializer.new(@playlist), status: :ok
+        render json: PlaylistsSerializer.new(playlist), status: :ok
       end
 
       def update
@@ -32,7 +32,8 @@ module Api
         if playlist.update(playlist_params)
           render json: PlaylistsSerializer.new(playlist), status: :ok
         else
-          render json: ErrorsSerializer.new(**playlist.errors.messages), status: :ok
+          render json: ErrorsSerializer.new(**playlist.errors.messages),
+                 status: :unprocessable_entity
         end
       end
 
@@ -45,10 +46,12 @@ module Api
 
       private
 
-      def authorized_to_view?(playlist)
-        return true if playlist.access_type_public?
+      def playlist_params
+        params.permit(:name, :description, :image, :remove_image, :sharable_type, :access_type)
+      end
 
-        return false if current_user.nil?
+      def authorized_to_view?(playlist)
+        return true if playlist.access_type_public? || playlist.user == current_user
 
         return current_user.friends.includes?(playlist.user) if playlist.access_type_only_friend?
 

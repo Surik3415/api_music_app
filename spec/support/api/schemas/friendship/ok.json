@@ -1,0 +1,320 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "data",
+        "meta"
+    ],
+    "properties": {
+        "data": {
+            "type": "array",
+            "default": [],
+            "title": "The data Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "id",
+                    "type",
+                    "attributes"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The id Schema",
+                        "examples": [
+                            "1"
+                        ]
+                    },
+                    "type": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The type Schema",
+                        "examples": [
+                            "friendship"
+                        ]
+                    },
+                    "attributes": {
+                        "type": "object",
+                        "default": {},
+                        "title": "The attributes Schema",
+                        "required": [
+                            "become_a_frinds_at",
+                            "user_info"
+                        ],
+                        "properties": {
+                            "become_a_frinds_at": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The become_a_frinds_at Schema",
+                                "examples": [
+                                    "2023-11-02T11:34:12.529Z"
+                                ]
+                            },
+                            "user_info": {
+                                "type": "object",
+                                "default": {},
+                                "title": "The user_info Schema",
+                                "required": [
+                                    "data"
+                                ],
+                                "properties": {
+                                    "data": {
+                                        "type": "object",
+                                        "default": {},
+                                        "title": "The data Schema",
+                                        "required": [
+                                            "id",
+                                            "type",
+                                            "attributes"
+                                        ],
+                                        "properties": {
+                                            "id": {
+                                                "type": "string",
+                                                "default": "",
+                                                "title": "The id Schema",
+                                                "examples": [
+                                                    "b15dce27-1cd2-4389-8d62-9537793cc7d8"
+                                                ]
+                                            },
+                                            "type": {
+                                                "type": "string",
+                                                "default": "",
+                                                "title": "The type Schema",
+                                                "examples": [
+                                                    "users"
+                                                ]
+                                            },
+                                            "attributes": {
+                                                "type": "object",
+                                                "default": {},
+                                                "title": "The attributes Schema",
+                                                "required": [
+                                                    "username",
+                                                    "email",
+                                                    "registrated_at",
+                                                    "image"
+                                                ],
+                                                "properties": {
+                                                    "username": {
+                                                        "type": "string",
+                                                        "default": "",
+                                                        "title": "The username Schema",
+                                                        "examples": [
+                                                            "Sparck"
+                                                        ]
+                                                    },
+                                                    "email": {
+                                                        "type": "string",
+                                                        "default": "",
+                                                        "title": "The email Schema",
+                                                        "examples": [
+                                                            "kyiaee@gmail.com"
+                                                        ]
+                                                    },
+                                                    "registrated_at": {
+                                                        "type": "string",
+                                                        "default": "",
+                                                        "title": "The registrated_at Schema",
+                                                        "examples": [
+                                                            "2023-11-02T11:09:33.287Z"
+                                                        ]
+                                                    },
+                                                    "image": {
+                                                        "type": "string",
+                                                        "default": "",
+                                                        "title": "The image Schema",
+                                                        "examples": [
+                                                            "/image/missing.jpg"
+                                                        ]
+                                                    }
+                                                },
+                                                "examples": [{
+                                                    "username": "Sparck",
+                                                    "email": "kyiaee@gmail.com",
+                                                    "registrated_at": "2023-11-02T11:09:33.287Z",
+                                                    "image": "/image/missing.jpg"
+                                                }]
+                                            }
+                                        },
+                                        "examples": [{
+                                            "id": "b15dce27-1cd2-4389-8d62-9537793cc7d8",
+                                            "type": "users",
+                                            "attributes": {
+                                                "username": "Sparck",
+                                                "email": "kyiaee@gmail.com",
+                                                "registrated_at": "2023-11-02T11:09:33.287Z",
+                                                "image": "/image/missing.jpg"
+                                            }
+                                        }]
+                                    }
+                                },
+                                "examples": [{
+                                    "data": {
+                                        "id": "b15dce27-1cd2-4389-8d62-9537793cc7d8",
+                                        "type": "users",
+                                        "attributes": {
+                                            "username": "Sparck",
+                                            "email": "kyiaee@gmail.com",
+                                            "registrated_at": "2023-11-02T11:09:33.287Z",
+                                            "image": "/image/missing.jpg"
+                                        }
+                                    }
+                                }]
+                            }
+                        },
+                        "examples": [{
+                            "become_a_frinds_at": "2023-11-02T11:34:12.529Z",
+                            "user_info": {
+                                "data": {
+                                    "id": "b15dce27-1cd2-4389-8d62-9537793cc7d8",
+                                    "type": "users",
+                                    "attributes": {
+                                        "username": "Sparck",
+                                        "email": "kyiaee@gmail.com",
+                                        "registrated_at": "2023-11-02T11:09:33.287Z",
+                                        "image": "/image/missing.jpg"
+                                    }
+                                }
+                            }
+                        }]
+                    }
+                },
+                "examples": [{
+                    "id": "1",
+                    "type": "friendship",
+                    "attributes": {
+                        "become_a_frinds_at": "2023-11-02T11:34:12.529Z",
+                        "user_info": {
+                            "data": {
+                                "id": "b15dce27-1cd2-4389-8d62-9537793cc7d8",
+                                "type": "users",
+                                "attributes": {
+                                    "username": "Sparck",
+                                    "email": "kyiaee@gmail.com",
+                                    "registrated_at": "2023-11-02T11:09:33.287Z",
+                                    "image": "/image/missing.jpg"
+                                }
+                            }
+                        }
+                    }
+                }]
+            },
+            "examples": [
+                [{
+                    "id": "1",
+                    "type": "friendship",
+                    "attributes": {
+                        "become_a_frinds_at": "2023-11-02T11:34:12.529Z",
+                        "user_info": {
+                            "data": {
+                                "id": "b15dce27-1cd2-4389-8d62-9537793cc7d8",
+                                "type": "users",
+                                "attributes": {
+                                    "username": "Sparck",
+                                    "email": "kyiaee@gmail.com",
+                                    "registrated_at": "2023-11-02T11:09:33.287Z",
+                                    "image": "/image/missing.jpg"
+                                }
+                            }
+                        }
+                    }
+                }]
+            ]
+        },
+        "meta": {
+            "type": "object",
+            "default": {},
+            "title": "The meta Schema",
+            "required": [
+                "scaffold_url",
+                "count",
+                "page",
+                "prev",
+                "next"
+            ],
+            "properties": {
+                "scaffold_url": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The scaffold_url Schema",
+                    "examples": [
+                        "/api/v1/friendships?page=__pagy_page__"
+                    ]
+                },
+                "count": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The count Schema",
+                    "examples": [
+                        1
+                    ]
+                },
+                "page": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The page Schema",
+                    "examples": [
+                        1
+                    ]
+                },
+                "prev": {
+                    "type": "null",
+                    "default": null,
+                    "title": "The prev Schema",
+                    "examples": [
+                        null
+                    ]
+                },
+                "next": {
+                    "type": "null",
+                    "default": null,
+                    "title": "The next Schema",
+                    "examples": [
+                        null
+                    ]
+                }
+            },
+            "examples": [{
+                "scaffold_url": "/api/v1/friendships?page=__pagy_page__",
+                "count": 1,
+                "page": 1,
+                "prev": null,
+                "next": null
+            }]
+        }
+    },
+    "examples": [{
+        "data": [{
+            "id": "1",
+            "type": "friendship",
+            "attributes": {
+                "become_a_frinds_at": "2023-11-02T11:34:12.529Z",
+                "user_info": {
+                    "data": {
+                        "id": "b15dce27-1cd2-4389-8d62-9537793cc7d8",
+                        "type": "users",
+                        "attributes": {
+                            "username": "Sparck",
+                            "email": "kyiaee@gmail.com",
+                            "registrated_at": "2023-11-02T11:09:33.287Z",
+                            "image": "/image/missing.jpg"
+                        }
+                    }
+                }
+            }
+        }],
+        "meta": {
+            "scaffold_url": "/api/v1/friendships?page=__pagy_page__",
+            "count": 1,
+            "page": 1,
+            "prev": null,
+            "next": null
+        }
+    }]
+}

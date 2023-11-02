@@ -5,7 +5,7 @@ module Api
     class PlaylistsSerializer < ApplicationSerializer
       attributes :name, :description, :likes, :created_at, :updated_at
 
-      attribute :logo, &:logo_url
+      attribute :image, &:image_url
     end
   end
 end

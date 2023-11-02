@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+      "errors"
+  ],
+  "properties": {
+      "errors": {
+          "type": "object",
+          "default": {},
+          "title": "The errors Schema",
+          "required": [
+              "username",
+              "email"
+          ],
+          "properties": {
+              "username": {
+                  "type": "array",
+                  "default": [],
+                  "title": "The username Schema",
+                  "items": {
+                      "type": "string",
+                      "title": "A Schema",
+                      "examples": [
+                          "is too short (minimum is 2 characters)",
+                          "only allows letters"
+                      ]
+                  },
+                  "examples": [
+                      ["is too short (minimum is 2 characters)",
+                          "only allows letters"
+                      ]
+                  ]
+              },
+              "email": {
+                  "type": "array",
+                  "default": [],
+                  "title": "The email Schema",
+                  "items": {
+                      "type": "string",
+                      "default": "",
+                      "title": "A Schema",
+                      "examples": [
+                          "is not a valid email address"
+                      ]
+                  },
+                  "examples": [
+                      [
+                          "is not a valid email address"]
+                  ]
+              }
+          },
+          "examples": [{
+              "username": [
+                  "is too short (minimum is 2 characters)",
+                  "only allows letters"
+              ],
+              "email": [
+                  "is not a valid email address"
+              ]
+          }]
+      }
+  },
+  "examples": [{
+      "errors": {
+          "username": [
+              "is too short (minimum is 2 characters)",
+              "only allows letters"
+          ],
+          "email": [
+              "is not a valid email address"
+          ]
+      }
+  }]
+}

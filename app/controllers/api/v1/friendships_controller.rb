@@ -3,14 +3,27 @@
 module Api
   module V1
     class FriendshipsController < AuthenticateController
-      before_action :authorize_access_request!, only: %i[create destroy]
+      before_action :authorize_access_request!, only: %i[index create destroy]
+      include Pagy::Backend
+
+      ITEMS = 15
+
+      def index
+        friendships = current_user.friendships.includes(:friend)
+
+        pagy, records = pagy(friendships, items: ITEMS)
+
+        options = { meta: pagy_metadata(pagy) }
+
+        render json: Api::V1::FriendshipSerializer.new(records, options)
+      end
 
       def create
         friend_reauest = current_user.received_friend_requests.find_by(id: params[:id])
         return not_found if friend_reauest.nil?
 
         if current_user.friends.include?(friend_reauest.sender)
-          render json: { error: 'Friendship already exists', status: :conflict }
+          render json: { error: 'Friendship already exists', status: :not_found }
         else
           create_friendship(current_user, friend_reauest.sender)
           friend_reauest.destroy
@@ -37,15 +50,8 @@ module Api
         friendship1 = user.friendships.build(friend_id: friend.id)
         friendship2 = friend.friendships.build(friend_id: user.id)
 
-        if friendship1.save && friendship2.save
-          render json: { message: FriendshipsSerializer.new(friendship1) }
-        else
-          render json: { message: ErrorsSerializer.new(friendship1.errors) }
-        end
-      end
-
-      def friendship_params
-        params.permit(:friend_id)
+        friendship1.save && friendship2.save
+        render json: { message: FriendshipSerializer.new(friendship1) }
       end
     end
   end

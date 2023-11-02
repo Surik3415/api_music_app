@@ -23,10 +23,4 @@ class SigninController < AuthenticateController
 
     render json: :ok
   end
-
-  private
-
-  def user_params
-    params.permit(:email, :password)
-  end
 end
