@@ -17,6 +17,9 @@ Rails.application.routes.draw do
       resource :user_profile, only: %i[show update destroy]
       resources :playlists
 
+      resources :friend_requests, only: %i[create]
+      resources :friendships, only: %i[index create destroy]
+
       get 'friend_requests/:tab', to: 'friend_requests#index',
                                   constraints: {
                                     tab: /#{FriendRequestTabs::ALL.map(&:to_s).join('|')}/

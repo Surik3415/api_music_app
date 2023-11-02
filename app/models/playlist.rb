@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Playlist < ApplicationRecord
+  include ImageUploader::Attachment(:image)
+
   belongs_to :user
   enum access_type: { private: 'private', public: 'public', only_friend: 'only_friend' },
        _prefix: true

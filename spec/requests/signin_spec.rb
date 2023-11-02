@@ -14,6 +14,7 @@ RSpec.describe 'Signin', type: :request do
             password: { type: :string }
           }
         }
+
         context 'sign in with valid params' do
           response(200, 'successful') do
             let(:params) { { email: user.email, password: user.password } }
@@ -35,6 +36,14 @@ RSpec.describe 'Signin', type: :request do
         context 'sign in with invalid email' do
           response(422, 'unprocessable_entity') do
             let(:params) { { email: ' ', password: user.password } }
+
+            run_test!
+          end
+        end
+
+        context 'sign in with invalid email and password' do
+          response(422, 'unprocessable_entity') do
+            let(:params) { { email: ' ', password: ' ' } }
 
             run_test!
           end

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+      "data"
+  ],
+  "properties": {
+      "data": {
+          "type": "object",
+          "default": {},
+          "title": "The data Schema",
+          "required": [
+              "id",
+              "type",
+              "attributes"
+          ],
+          "properties": {
+              "id": {
+                  "type": "string",
+                  "default": "",
+                  "title": "The id Schema",
+                  "examples": [
+                      "2d0d4579-afd9-4c2e-a6b0-be42fdc04fd1"
+                  ]
+              },
+              "type": {
+                  "type": "string",
+                  "default": "",
+                  "title": "The type Schema",
+                  "examples": [
+                      "users"
+                  ]
+              },
+              "attributes": {
+                  "type": "object",
+                  "default": {},
+                  "title": "The attributes Schema",
+                  "required": [
+                      "username",
+                      "email",
+                      "registrated_at",
+                      "image"
+                  ],
+                  "properties": {
+                      "username": {
+                          "type": "string",
+                          "default": "",
+                          "title": "The username Schema",
+                          "examples": [
+                              "Sparck"
+                          ]
+                      },
+                      "email": {
+                          "type": "string",
+                          "default": "",
+                          "title": "The email Schema",
+                          "examples": [
+                              "kyiass@gmail.com"
+                          ]
+                      },
+                      "registrated_at": {
+                          "type": "string",
+                          "default": "",
+                          "title": "The registrated_at Schema",
+                          "examples": [
+                              "2023-11-01T23:40:15.680Z"
+                          ]
+                      },
+                      "image": {
+                          "type": "string",
+                          "default": "",
+                          "title": "The image Schema",
+                          "examples": [
+                              "/image/missing.jpg"
+                          ]
+                      }
+                  },
+                  "examples": [{
+                      "username": "Sparck",
+                      "email": "kyiass@gmail.com",
+                      "registrated_at": "2023-11-01T23:40:15.680Z",
+                      "image": "/image/missing.jpg"
+                  }]
+              }
+          },
+          "examples": [{
+              "id": "2d0d4579-afd9-4c2e-a6b0-be42fdc04fd1",
+              "type": "users",
+              "attributes": {
+                  "username": "Sparck",
+                  "email": "kyiass@gmail.com",
+                  "registrated_at": "2023-11-01T23:40:15.680Z",
+                  "image": "/image/missing.jpg"
+              }
+          }]
+      }
+  },
+  "examples": [{
+      "data": {
+          "id": "2d0d4579-afd9-4c2e-a6b0-be42fdc04fd1",
+          "type": "users",
+          "attributes": {
+              "username": "Sparck",
+              "email": "kyiass@gmail.com",
+              "registrated_at": "2023-11-01T23:40:15.680Z",
+              "image": "/image/missing.jpg"
+          }
+      }
+  }]
+}

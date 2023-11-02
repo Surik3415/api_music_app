@@ -20,13 +20,13 @@ module Api
 
       def create
         receiver = User.find_by(email: friend_params[:email])
-        return render_not_found if receiver.nil?
+        return not_found if not_valid_friend_request?(current_user, receiver)
 
         friend_request = current_user.sent_friend_requests.build(receiver: receiver)
 
-        if same_request_exists?(friend_request)
-          render json: { error: 'same friend request already exists, check received requests',
-                         status: :conflict }
+        if same_request_exists?(current_user, receiver)
+          render json: { error: 'same friend request already exists, check received requests' },
+                 status: :not_found
         else
           friend_request.save
           render json: FriendRequestSerializer.new(friend_request)
@@ -35,11 +35,13 @@ module Api
 
       private
 
-      def same_request_exists?(friend_request)
-        FriendRequest.exists?(
-          { sender: current_user, receiver: friend_request.receiver }
-          .or(sender: friend_request.receiver, receiver: current_user)
-        )
+      def not_valid_friend_request?(current_user, receiver)
+        receiver.nil? || current_user.friends.include?(receiver)
+      end
+
+      def same_request_exists?(current_user, receiver)
+        FriendRequest.exists?(sender: current_user, receiver: receiver) ||
+          FriendRequest.exists?(sender: receiver, receiver: current_user)
       end
 
       def friend_params
