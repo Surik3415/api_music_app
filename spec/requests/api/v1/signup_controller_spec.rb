@@ -2,9 +2,9 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Signup', type: :request do
-  describe 'POST /sign_up' do
-    path '/sign_up' do
+RSpec.describe 'Api::V1::SignupController', type: :request do
+  describe 'POST sign_up' do
+    path '/api/v1/sign_up' do
       post 'Creates a new user' do
         consumes 'application/json'
         parameter name: :params, in: :body, schema: {
