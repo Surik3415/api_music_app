@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-RSpec.describe 'Signin', type: :request do
+RSpec.describe 'Api::V1::SigninController', type: :request do
   let(:user) { create(:user) }
 
-  describe 'POST /sign_in' do
-    path '/sign_in' do
+  describe 'POST api/v1/sign_in' do
+    path '/api/v1/sign_in' do
       post 'Creates a session' do
         consumes 'application/json'
         parameter name: :params, in: :body, schema: {
@@ -53,7 +53,7 @@ RSpec.describe 'Signin', type: :request do
   end
 
   describe 'DELETE sign_out' do
-    path '/sign_out' do
+    path '/api/v1/sign_out' do
       delete 'Destroy' do
         tags 'Sessions'
         security [Bearer: []]

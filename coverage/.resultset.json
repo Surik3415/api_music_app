@@ -188,10 +188,12 @@
           null
         ]
       },
-      "/home/surik3415/Desktop/api_music_app/app/controllers/authenticate_controller.rb": {
+      "/home/surik3415/Desktop/api_music_app/app/controllers/api/v1/authenticate_controller.rb": {
         "lines": [
           null,
           null,
+          1,
+          1,
           1,
           1,
           1,
@@ -208,6 +210,8 @@
           null,
           1,
           2,
+          null,
+          null,
           null,
           null
         ]
@@ -468,6 +472,93 @@
           null
         ]
       },
+      "/home/surik3415/Desktop/api_music_app/app/controllers/api/v1/signin_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          4,
+          null,
+          4,
+          1,
+          1,
+          1,
+          1,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/serializers/tokens_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/controllers/api/v1/signup_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          2,
+          null,
+          2,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/home/surik3415/Desktop/api_music_app/app/controllers/api/v1/user_profiles_controller.rb": {
         "lines": [
           null,
@@ -514,87 +605,8 @@
           null,
           null
         ]
-      },
-      "/home/surik3415/Desktop/api_music_app/app/controllers/signin_controller.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          4,
-          null,
-          4,
-          1,
-          1,
-          1,
-          1,
-          null,
-          3,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/surik3415/Desktop/api_music_app/app/serializers/tokens_serializer.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          2,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/surik3415/Desktop/api_music_app/app/controllers/signup_controller.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          2,
-          null,
-          2,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1698943428
+    "timestamp": 1699011805
   }
 }
