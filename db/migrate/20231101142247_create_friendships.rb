@@ -2,7 +2,7 @@
 
 class CreateFriendships < ActiveRecord::Migration[7.0]
   def change
-    create_table :friendships do |t|
+    create_table :friendships, id: :uuid do |t|
       t.references :user, to_table: :users, type: :uuid
       t.references :friend, to_table: :users, type: :uuid
 

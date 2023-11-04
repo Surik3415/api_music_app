@@ -3,8 +3,9 @@
 class CreatePlaylist < ActiveRecord::Migration[7.0]
   def change
     create_enum :access_type, %w[private public only_friend]
+    enable_extension :pg_trgm
 
-    create_table :playlists do |t|
+    create_table :playlists, id: :uuid do |t|
       t.belongs_to :user, null: false, type: :uuid
       t.string :name, null: false
       t.text :description
@@ -16,5 +17,6 @@ class CreatePlaylist < ActiveRecord::Migration[7.0]
 
       t.timestamps
     end
+    add_index :playlists, :name, using: :gin, opclass: :gin_trgm_ops
   end
 end
