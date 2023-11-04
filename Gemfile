@@ -54,6 +54,7 @@ gem 'shrine', '~> 3.0'
 group :development, :test do
   gem 'dotenv-rails', '~> 2.8.1'
   gem 'faker', '~> 3.2.1'
+  gem 'ffaker', '~> 2.23'
   gem 'json_matchers', '~> 0.11.1'
   gem 'pry', '~> 0.14.2'
   gem 'rspec-rails', '~> 6.0.0'

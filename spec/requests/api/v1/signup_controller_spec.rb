@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'rails_helper'
-
 RSpec.describe 'Api::V1::SignupController', type: :request do
   describe 'POST sign_up' do
     path '/api/v1/sign_up' do

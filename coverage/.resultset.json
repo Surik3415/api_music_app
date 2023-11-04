@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/surik3415/Desktop/api_music_app/app/models/friend_request.rb": {
+      "/home/surik3415/Desktop/api_music_app/app/models/album_author.rb": {
         "lines": [
           null,
           null,
@@ -20,7 +20,64 @@
           null
         ]
       },
+      "/home/surik3415/Desktop/api_music_app/app/models/album.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/models/author.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/models/friend_request.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/home/surik3415/Desktop/api_music_app/app/models/friendship.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/models/genre.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/models/playlist_song.rb": {
         "lines": [
           null,
           null,
@@ -38,6 +95,9 @@
           1,
           null,
           1,
+          1,
+          1,
+          null,
           1,
           null,
           1,
@@ -66,6 +126,32 @@
           1,
           10,
           null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/models/song_author.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/models/song.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -607,6 +693,6 @@
         ]
       }
     },
-    "timestamp": 1699011805
+    "timestamp": 1699062155
   }
 }

@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-# spec/models/playlist_spec.rb
-require 'rails_helper'
-
 RSpec.describe Playlist, type: :model do
   let(:user) { create(:user) }
   let(:playlist) { build(:playlist) }
