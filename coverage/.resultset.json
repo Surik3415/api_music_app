@@ -28,6 +28,7 @@
           1,
           1,
           1,
+          1,
           null,
           1,
           null
@@ -70,6 +71,7 @@
         "lines": [
           null,
           null,
+          1,
           1,
           1,
           null,
@@ -124,7 +126,7 @@
           null,
           null,
           1,
-          10,
+          11,
           null,
           null
         ]
@@ -287,7 +289,7 @@
           1,
           null,
           1,
-          26,
+          30,
           null,
           null,
           1,
@@ -464,6 +466,82 @@
           null
         ]
       },
+      "/home/surik3415/Desktop/api_music_app/app/controllers/api/v1/playlist_songs_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/serializers/api/v1/playlist_song_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/home/surik3415/Desktop/api_music_app/app/controllers/api/v1/playlists_controller.rb": {
         "lines": [
           null,
@@ -476,12 +554,20 @@
           1,
           null,
           1,
+          1,
+          2,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
           null,
           1,
           1,
           1,
           1,
-          null,
           1,
           null,
           null,
@@ -515,7 +601,8 @@
           1,
           null,
           1,
-          2,
+          4,
+          null,
           null,
           null,
           1,
@@ -553,7 +640,7 @@
           1,
           null,
           1,
-          6,
+          7,
           null,
           null
         ]
@@ -691,8 +778,68 @@
           null,
           null
         ]
+      },
+      "/home/surik3415/Desktop/api_music_app/app/serializers/api/v1/album_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/api_music_app/app/serializers/api/v1/author_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/api_music_app/app/serializers/api/v1/genre_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/api_music_app/app/serializers/api/v1/song_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1699062155
+    "timestamp": 1699190999
   }
 }

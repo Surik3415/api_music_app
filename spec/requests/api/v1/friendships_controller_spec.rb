@@ -11,8 +11,6 @@ RSpec.describe 'Api::V1::FriendshipsController', :request do
         tags 'Friendships'
         security [Bearer: []]
         consumes 'application/json'
-        # produces 'application/json'
-
         parameter name: access_header, in: :header, type: :string
         parameter name: :params, in: :body, schema: {
           type: :object,

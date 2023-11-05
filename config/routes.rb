@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
       resources :playlists
 
+      resource :playlist_songs, only: %i[create destroy]
+
       resources :friend_requests, only: %i[create]
 
       resources :friendships, only: %i[index create destroy]

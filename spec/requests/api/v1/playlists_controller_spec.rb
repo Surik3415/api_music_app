@@ -19,6 +19,46 @@ RSpec.describe 'Api::V1::PlaylistsController', :request do
     end
   end
 
+  describe 'POST #create Playlist' do
+    path '/api/v1/playlists' do
+      post 'Playlists #create endpoint' do
+        tags 'Playlists'
+        consumes 'application/json'
+        security [Bearer: []]
+        parameter name: access_header, in: :header, type: :string
+        parameter name: :params, in: :body, schema: {
+          type: :object,
+          properties: {
+            id: { type: :string },
+            name: { type: :string },
+            description: { type: :string },
+            logo: { type: :string }
+          },
+          required: %i[name]
+        }
+
+        context 'when user is owner of playlist' do
+          let(access_header) { access_token(user) }
+          let(:params) { { name: 'Payasos', description: 'Adios' } }
+
+          response(200, 'return ok') do
+            run_test!
+          end
+        end
+
+        context 'with invalid updates' do
+          let(access_header) { access_token(user) }
+          let(:params) { { name: '22' } }
+          let(:playlist_id) { create(:playlist, user: user).id }
+
+          response(422, 'unprocessable_entity') do
+            run_test!
+          end
+        end
+      end
+    end
+  end
+
   describe 'SHOW #show Playlist' do
     path '/api/v1/playlists/{playlist_id}' do
       parameter name: 'playlist_id', in: :path, type: :string, description: 'Playlists ID'

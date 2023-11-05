@@ -3,17 +3,25 @@
 module Api
   module V1
     class PlaylistsController < AuthenticateController
-      before_action :authorize_access_request!, only: %i[show update destroy]
+      before_action :authorize_access_request!, only: %i[create show update destroy]
 
       include Pagy::Backend
 
       ITEMS = 10
+      def create
+        playlist = current_user.playlists.build(playlist_params)
+        if playlist.save
+          render json: PlaylistsSerializer.new(playlist)
+        else
+          render json: ErrorsSerializer.new(**playlist.errors.messages),
+                 status: :unprocessable_entity
+        end
+      end
 
       def index
         public_playlists = Playlist.access_type_public
         pagy, public_playlists = pagy(public_playlists, items: ITEMS)
         options = { meta: pagy_metadata(pagy) }
-
         render json: PlaylistsSerializer.new(public_playlists, options), status: :ok
       end
 
@@ -47,7 +55,8 @@ module Api
       private
 
       def playlist_params
-        params.permit(:name, :description, :image, :remove_image, :sharable_type, :access_type)
+        params.permit(:user_id, :name, :description, :image, :remove_image, :sharable_type,
+                      :access_type)
       end
 
       def authorized_to_view?(playlist)
